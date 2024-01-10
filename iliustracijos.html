@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		body {
+		
+			color: white;
+
+			animation: color-change-2x 5s linear infinite alternate both;
+	        animation: color-change-2x 5s linear infinite alternate both;
+		}
+		@keyframes color-change-2x {
+			0% {
+			background: #19dcea;
+			}
+			100% {
+			background: #b22cff;
+			}
+			}
+			@keyframes color-change-2x {
+			0% {
+			background: #19dcea;
+			}
+			100% {
+			background: #b22cff;
+			}
+		}
+		nav ul{
+				border-radius: 10px;
+				border: 3px solid navy;
+				background-color: white;
+				color: navy;  /*text color*/
+				margin: 0px;
+				padding: 0px; /*jei nuimsim tie tekstai bus dar toliau*/				
+			}
+			nav li{
+			
+				list-style-type: none; /*nebutu liste tasku*/
+				padding:5px; /*list item pats pastums teksta*/	
+			}
+			nav>ul>li {
+			
+				display: inline-block;
+				margin-right: 20px;
+			}
+			nav li:hover {
+				cursor:pointer;
+			}
+			nav {
+				position: fixed;
+				bottom: 0;
+				margin: 100px;
+				width: auto;
+				height: auto;
+				left: 35%;
+				margin-left: -100pax;				
+			}
+			
+			/*taip paspaudus nepasikeis spalva kontaktu zodzio*/
+			nav a{
+				text-decoration: inherit;
+				color: inherit;
+			}
+			
+			hr {
+				border-width: 1px;
+			}
+			h1 {
+				padding-top:15px;
+				text-align: center;		
+			}
+			
+			h2 {
+				padding-left: 50px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				
+				animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+				animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+			}
+
+			@keyframes tracking-in-expand {
+				0% {
+					letter-spacing: -0.5em;
+					opacity: 0;
+				}
+				40% {
+					opacity: 0.6;
+				}
+				100% {
+					opacity: 1;
+				}
+				}
+				@keyframes tracking-in-expand {
+				0% {
+					letter-spacing: -0.5em;
+					opacity: 0;
+				}
+				40% {
+					opacity: 0.6;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			.rectangle {
+				border-radius: 40px;
+				position: relative;
+				margin:0 3em;
+				width: 93%;
+				height: 60vh;
+				background-color: steelblue;
+
+			}
+			
+			.centerfit {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				width: 300px;
+				height: 300px;
+			}
+			.leftfit {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 20%;
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				width: 300px;
+				height: 300px;
+				border-radius: 30px;
+			}
+			.rightfit {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 80%;
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				width: 300px;
+				height: 300px;
+			}
+	
+			/*mobile version*/
+			@media screen and (max-width: 600px){
+				.icon{
+					display: block;
+				}
+				nav>ul {
+					border-radius: 10px;
+					border: 3px solid navy;
+					background-color: white;
+					color: navy;  /*text color*/
+					margin: 0px;
+					padding: 0px; /*jei nuimsim tie tekstai bus dar toliau*/	
+				}
+				nav{
+					position: fixed;
+					bottom: 0;
+					margin: 50px;
+					width: auto;
+					height: auto;
+					left: 15%;
+				}
+				nav>ul>li{
+					display: inline-block;
+				margin-right: 10px;
+				}
+				.submenu li:hover  {
+				position: relative;
+				}
+				h2 {
+					padding-top:15px;
+					text-align: center;	
+					
+				}
+				.rectangle {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border-radius: 40px;
+					width: 93%;
+					height: 1000px;
+					background-color: steelblue;
+					margin: auto;
+				}
+				
+				.rightfit {
+					top: 130%;
+					left: 50%;
+					-ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+					width: 250px;
+					height: 250px;
+				}
+				.leftfit {
+					margin: 0;
+					position: absolute;
+					top: 90%;
+					left: 50%;
+					-ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+					width: 250px;
+					height: 250px;
+					border-radius: 30px;
+				}
+				.centerfit {
+					margin: 0;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					-ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+					width: 250px;
+					height: 250px;
+					
+			}
+			}
+		</style>
+	</head>
+	<script>
+		const rodyti=(a)=>{
+			a.style.display="none";
+			document.querySelector("nav>ul").style.display="block";
+		}
+	</script>
+	<body>
+		<hr color="white"/>
+		<h1>VISŲ DARBŲ KOLEKCIJA</h1>
+		<h2>ILIUSTRACIJOS</h2>
+		<div class="rectangle"></div>
+			<div class="imgbox">
+				<img class="rightfit" src='cup.png' alt="Image Hover Zoom">
+				<img class="centerfit" src='dog1.png' alt="Image Hover Zoom">
+				<img class="leftfit" src='dog2.png' alt="Image Hover Zoom">
+			
+			</div>
+		<nav>
+			<a class="icon" onclick="rodyti(this)"></a>
+			<ul>
+				<li><a href="pagrindinis.html">Pagrindinis</a></li>
+				<li><a href="iliustracijos.html">Iliustracijos</a></li>
+				<li><a href="apie.html">Apie</a></li>
+			</ul>
+			
+		</nav>
+	</body>
+</html>

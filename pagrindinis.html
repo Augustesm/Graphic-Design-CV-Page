@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		body {
+		
+		color: white;
+
+		animation: color-change-2x 5s linear infinite alternate both;
+		animation: color-change-2x 5s linear infinite alternate both;
+	}
+	@keyframes color-change-2x {
+		0% {
+		background: #19dcea;
+		}
+		100% {
+		background: #b22cff;
+		}
+		}
+		@keyframes color-change-2x {
+		0% {
+		background: #19dcea;
+		}
+		100% {
+		background: #b22cff;
+		}
+	}
+		nav ul{
+				border-radius: 10px;
+				border: 3px solid navy;
+				background-color: white;
+				color: navy;  /*text color*/
+				margin: 0px;
+				padding: 0px; /*jei nuimsim tie tekstai bus dar toliau*/				
+			}
+			nav li{
+			
+				list-style-type: none; /*nebutu liste tasku*/
+				padding:5px; /*list item pats pastums teksta*/	
+			}
+			nav>ul>li {
+			
+				display: inline-block;
+				margin-right: 20px;
+			}
+			nav li:hover {
+				cursor:pointer;
+			}
+			nav {
+				position: fixed;
+				bottom: 0;
+				margin: 100px;
+				width: auto;
+				height: auto;
+				left: 35%;
+								
+			}
+			
+			/*taip paspaudus nepasikeis spalva kontaktu zodzio*/
+			nav a{
+				text-decoration: inherit;
+				color: inherit;
+			}
+			
+			.center {
+				text-align: center;
+			}
+			h1 {
+				color: white;
+				font-size: 80px;
+				position: absolute;
+				top: 30%;
+				left: 70%;
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);		
+				
+				
+				}
+			
+			h4 {
+				position: absolute;
+				top: 55%;
+				left: 70%;
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				
+				animation: jello-horizontal 0.9s both;
+	        animation: jello-horizontal 0.9s both;
+			
+			}
+			@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+			.centerfit {
+				max-width: 100%;
+				max-height: 97vh;
+				margin: auto;
+			}
+			img {
+				/* Add the blur effect */
+				
+				
+
+				/* Full height */
+				height: 100%; 
+
+				/* Center and scale the image nicely */
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				width:100%;
+				max-width: 98%;
+				border-radius: 5%;
+			}
+		/*mobile version*/
+			@media screen and (max-width: 600px){
+				.icon{
+					display: block;
+				}
+				nav>ul {
+					border-radius: 10px;
+					border: 3px solid navy;
+					background-color: white;
+					color: navy;  /*text color*/
+					margin: 0px;
+					padding: 0px; /*jei nuimsim tie tekstai bus dar toliau*/	
+				}
+				nav{
+				position: fixed;
+				bottom: 0;
+				margin: 50px;
+				width: auto;
+				height: auto;
+				left: 15%;
+				}
+				nav>ul>li{
+					display: inline-block;
+				margin-right: 10px;
+				}
+				.submenu li:hover  {
+				position: relative;
+
+				}
+				
+				.imgbox {
+					height: 100%;
+					width: 100%;
+				}
+				.centerfit {
+					height: 98vh;
+					width: 100%;
+					object-fit: cover;
+				}
+				h1 {
+				
+				font-size: 80px;
+				position: absolute;
+				top: 45%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				}
+				h4 {
+				
+				position: absolute;
+				top: 65%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				}
+			}
+			
+			
+			
+				
+		</style>
+	</head>
+	<script>
+		const rodyti=(a)=>{
+			a.style.display="none";
+			document.querySelector("nav>ul").style.display="block";
+		}
+	</script>
+	
+	<body>
+		<div class="imgbox">
+			<img class="centerfit" src='web foto.png'>
+		</div>
+		
+		<div class="center">
+			<h1>augustĖ smolskaitĖ</h1>
+			<h4>GRAFIKOS DIZAINERĖ</h4>
+		</div>	
+		
+		<nav>
+			<a class="icon" onclick="rodyti(this)"></a>
+			<ul>
+				<li><a href="pagrindinis.html">Pagrindinis</a></li>
+				<li><a href="iliustracijos.html">Iliustracijos</a></li>	
+				<li><a href="apie.html">Apie</a></li>
+			</ul>
+			
+		</nav>
+		
+	
+
+	</body>
+</html>
